@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:id="@+id/activity_attendance_textview_in"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:drawableTop="@mipmap/in_320"
+            android:layout_marginRight="190dp"
+            android:gravity="center"
+            android:text="IN"
+            android:textColor="#262626"
+           android:padding="20dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/activity_attendance_textview_out"
+        android:layout_width="180dp"
+        android:layout_height="283dp"
+        android:layout_marginLeft="190dp"
+        android:layout_weight="0.5"
+        android:drawableTop="@mipmap/out_320"
+        android:drawablePadding="20dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="OUT"
+        android:textColor="#262626"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_attendance_textview_out"
+        android:text="lastIn"
+        android:id="@+id/lastIn"
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastIn"
+        android:text="lastOut"
+        android:id="@+id/lastOut"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fromDate"
+    android:layout_below="@id/lastOut"
+    android:paddingTop="10dp"
+    android:hint="Enter from date"
+    android:layout_margin="10dp"
+    android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toDate"
+        android:layout_below="@id/fromDate"
+        android:paddingTop="10dp"
+        android:hint="Enter to date"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reason"
+        android:layout_below="@id/toDate"
+        android:paddingTop="10dp"
+        android:hint="State your reason"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@+id/reason"
+        android:layout_marginTop="10dp"
+        android:text="Submit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="10dp"
+        android:text="Next"/>
+</RelativeLayout>

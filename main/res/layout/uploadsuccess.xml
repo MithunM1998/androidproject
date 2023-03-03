@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_upload_success_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/activity_upload_success_button_upload"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/back_button_bg"
+            android:text="Upload"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/activity_upload_success_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/success_320" />
+
+            <TextView
+                android:id="@+id/activity_upload_success_textview_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Upload Successful"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/activity_upload_success_button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/back_button_bg"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp"
+                android:text="BACK"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
